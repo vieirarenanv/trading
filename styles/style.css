@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor-1: #ffffff;
+    --fonte-texto: "Josefin Sans", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--cor-1);
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    background: url(/assets/wallpaper.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
