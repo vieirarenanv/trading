@@ -16,10 +16,10 @@ function calculateTargets() {
 
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
-        <p><strong>Alvo 1 </strong>➜ $${target1.toFixed(2)}</p>
-        <p><strong>Alvo 2 </strong>➜ $${target2.toFixed(2)}</p>
-        <p><strong>Alvo 3 </strong>➜ $${target3.toFixed(2)}</p>
-        <p><strong>Alvo 4 </strong>➜ $${target4.toFixed(2)}</p>
+        <p><strong>Alvo 1 </strong>➜ $${target1}</p>
+        <p><strong>Alvo 2 </strong>➜ $${target2}</p>
+        <p><strong>Alvo 3 </strong>➜ $${target3}</p>
+        <p><strong>Alvo 4 </strong>➜ $${target4}</p>
     `;
 }
 function resetForm() {
