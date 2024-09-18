@@ -2,14 +2,14 @@
 
 :root {
     --cor-1: #ffffff;
+    --cor-2: #000000;
     --fonte-texto: "Josefin Sans", sans-serif;
 }
 
 body {
     font-family: var(--fonte-texto);
     color: var(--cor-1);
-    padding: 10px;
-    max-width: 600px;
+    padding: 80px;
     margin: auto;
     background: url(/assets/wallpaper.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -19,21 +19,33 @@ body {
 }
 
 .titulo {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
 }
 
-label {
-    display: block;
+.dados {
     margin-top: 10px;
     font-size: 20px;
+    color: var(--cor-2);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
-    width: 100%;
+    display: flex;
+    width: 400px;
     padding: 8px;
-    margin-top: 5px;
+    background-color:lightgray;
+    border-radius: 20px;
+    padding-left: 20px;
 }
 
 button {
@@ -41,10 +53,27 @@ button {
     margin-top: 10px;
     font-size: 20px;
     border-radius: 20px;
+    background-color: orange;
+    color: var(--cor-1);
+    cursor: pointer;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
 }
 
 .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:lightgray;
+    border-radius: 20px;
+    width: 30%;
     margin-top: 20px;
+    color: var(--cor-2);
     font-size: 20px;
-    font-weight: 800;
 }

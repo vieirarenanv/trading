@@ -9,15 +9,18 @@
 </head>
 <body>
     <h1 class="titulo">Calculadora de alvos</h1>
+
+    <div class="campo">
     <form id="investmentForm">
-        <label for="entryPrice">Preço de Entrada:</label>
-        <input type="number" id="entryPrice" step="any" required>
+        <input class="dados" type="number" id="entryPrice" step="any" placeholder="Preço de entrada" required>
+        <input class="dados" type="number" id="stopLoss" step="any" placeholder="Preço de stop loss" required>
 
-        <label for="stopLoss">Preço de Stop Loss:</label>
-        <input type="number" id="stopLoss" step="any" required>
-
-        <button type="button" onclick="calculateTargets()">Calcular alvos</button>
+        <div class="botao">
+        <button type="button" onclick="calculateTargets()">Calcular</button>
+        <button type="button" onclick="resetForm()">Resetar</button>
+        </div>
     </form>
+    </div>
 
     <div class="result" id="results"></div>
 
@@ -46,6 +49,10 @@
                 <p><strong>Alvo 3 :</strong> $${target3.toFixed(10)}</p>
                 <p><strong>Alvo 4 :</strong> $${target4.toFixed(10)}</p>
             `;
+        }
+        function resetForm() {
+            document.getElementById('investmentForm').reset();
+            document.getElementById('results').innerHTML = '';
         }
     </script>
 </body>
