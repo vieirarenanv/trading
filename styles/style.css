@@ -6,19 +6,24 @@
     --fonte-texto: "Josefin Sans", sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: var(--fonte-texto);
     color: var(--cor-1);
     padding: 80px;
     margin: auto;
-    background: url(/assets/wallpaper.png) no-repeat center center fixed;
+    background: url(/assets/wallpaper.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.titulo {
+.title {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -26,17 +31,17 @@ body {
     font-weight: 800;
 }
 
-.dados {
-    margin-top: 10px;
-    font-size: 20px;
-    color: var(--cor-2);
-}
-
-.campo {
+.insert {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.insert_op {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--cor-2);
 }
 
 input {
@@ -58,7 +63,7 @@ button {
     cursor: pointer;
 }
 
-.botao {
+.button_op {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -70,10 +75,16 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:lightgray;
     border-radius: 20px;
-    width: 30%;
-    margin-top: 20px;
-    color: var(--cor-2);
-    font-size: 20px;
+    margin-top: 30px;
+    color: var(--cor-1);
+    font-size: 25px;
+}
+
+@media (max-width: 1200px) {
+
+    input {
+        width: 90%;
+    }
+    
 }
