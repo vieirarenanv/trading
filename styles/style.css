@@ -14,8 +14,6 @@
 body {
     font-family: var(--fonte-texto);
     color: var(--cor-1);
-    padding: 80px;
-    margin: auto;
     background: url(/assets/wallpaper.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,15 +21,32 @@ body {
     background-size: cover;
 }
 
-.title {
+.image {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texting {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
+}
+
+.title {
     font-size: 40px;
     font-weight: 800;
 }
 
+.text {
+    padding-top: 5px;
+    color: var(--cor-1);
+    font-size: 25px;
+}
+
 .insert {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,18 +64,28 @@ input {
     width: 400px;
     padding: 8px;
     background-color:lightgray;
+    border-color:var(--cor-1);
     border-radius: 20px;
     padding-left: 20px;
 }
 
 button {
     padding: 10px 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 20px;
     border-radius: 20px;
-    background-color: orange;
+    background-color: var(--cor-2);
+    border-color: var(--cor-1);
     color: var(--cor-1);
     cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.button_reset:hover {
+    background-color: red;
 }
 
 .button_op {
